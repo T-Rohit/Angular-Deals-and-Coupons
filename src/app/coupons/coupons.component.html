@@ -1,0 +1,43 @@
+<section class="recentNews">
+    <div class="container">
+      <h2 class="news-title">Coupons</h2>
+      <button type="submit" class="t" routerLink="/after-login">Back</button>
+      <div class="row">
+        <div class="ct-blog col-sm-6 col-md-3" *ngFor="let coupons of Coupons">
+          <div class="inner">
+            <div class="fauxcrop" style="width: 150%; height: 200px;">
+              <a href="#"><img alt="{{coupons.image}}" src="{{coupons.image}}.jpg" ></a>
+            </div>
+              <h3 class="ct-blog-header">{{coupons.prodName}}</h3>
+              <p>Price &#x20b9; {{coupons.prodPrice}}</p>  
+              <p>Coupon Code- {{coupons.coupon}}</p> 
+              <p>{{coupons.cashBack}}</p>
+              <button (click)="alertmsg()">Redeem Code</button>
+          </div>
+        </div>
+        <!-- <div class="ct-blog col-sm-6 col-md-4">
+            <div class="inner">
+              <div class="fauxcrop">
+                <a href="#"><img alt="News Entry" src="https://findvectorlogo.com/wp-content/uploads/2019/03/flipkart-vector-logo.png" ></a>
+              </div>
+              <div class="ct-blog-content">
+                
+                <h3 class="ct-blog-header">Flipkart</h3>
+              </div>
+            </div>
+          </div>
+        <div class="ct-blog col-sm-6 col-md-4">
+            <div class="inner">
+              <div class="fauxcrop">
+                <a href="#"><img alt="News Entry" src="https://i.pinimg.com/originals/75/68/05/75680550fdc2305216ad9014d2b8b8f2.png" ></a>
+              </div>
+              <div class="ct-blog-content">
+                
+                <h3 class="ct-blog-header">Myntra</h3>
+              </div>
+            </div>
+          
+          </div> -->
+      </div>
+    </div>
+</section>

@@ -1,0 +1,168 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+<section class="recentNews">
+  <img src="https://img.grouponcdn.com/deal/2tAnk37ijij5aDNVDD51MbcSVEG9/2t-1680x250" >
+    <div class="container">
+
+      <h2 class="news-title">Deals</h2>
+      <button type="submit" class="t" routerLink="/home">Back</button>
+      <div class="row">
+       
+        <div class="ct-blog col-sm-6 col-md-3" *ngFor="let deals of Deals">
+          <div class="inner" >
+            <div class="fauxcrop" style="width: 150%; height: 200px;">
+              <a href="#"><img alt="{{deals.image}}" src="{{deals.image}}.jpg" ></a>
+            </div>
+              <h3 class="ct-blog-header">{{deals.prodName}}</h3>
+              <p>Price &#x20b9; {{deals.prodPrice}}</p>
+                
+          </div>
+        </div>
+        <!-- <div class="ct-blog col-sm-6 col-md-3">
+            <div class="inner">
+              <div class="fauxcrop">
+                <a href="#"><img alt="News Entry" src="https://m.media-amazon.com/images/I/71rhFZZIH3L._SX522_.jpg" ></a>
+              </div>
+                <h3 class="ct-blog-header">ASUS SR51s2<br>headphones</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span><p>Price &#x20b9; 5000</p>
+            </div>
+          </div>
+          <div class="ct-blog col-sm-6 col-md-3">
+            <div class="inner">
+              <div class="fauxcrop">
+                <a href="#"><img alt="News Entry" src="https://m.media-amazon.com/images/I/41qqmdUWnhL._AC_UF226,226_FMjpg_.jpg" ></a>
+              </div>
+                <h3 class="ct-blog-header">SMART r56<br> With IP68</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked" ></span>
+                <span class="fa fa-star"></span><p>Price &#x20b9; 3500</p>
+            </div>
+          </div>
+          <div class="ct-blog col-sm-6 col-md-3">
+            <div class="inner">
+              <div class="fauxcrop">
+                <a href="#"><img alt="News Entry" src="https://m.media-amazon.com/images/I/71XM12oE-3L._SL1500_.jpg" ></a>
+              </div>
+                <h3 class="ct-blog-header">ONE PLUS <br> 10R</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><p>Price &#x20b9; 50000</p>
+            </div>
+          </div>
+          <div class="ct-blog col-sm-6 col-md-3">
+            <div class="inner">
+              <div class="fauxcrop">
+                <a href="#"><img alt="News Entry" src="https://m.media-amazon.com/images/I/71HUnJvHsbL._SL1500_.jpg" ></a>
+              </div>
+              
+                <h3 class="ct-blog-header">SAMSUNG<br>S22 128Gb</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span><p>Price &#x20b9; 65000</p>
+            </div>
+          </div>
+          <div class="ct-blog col-sm-6 col-md-3">
+            <div class="inner">
+              <div class="fauxcrop">
+                <a href="#"><img alt="News Entry" src="https://m.media-amazon.com/images/I/61wqYsqU6AL._SL1500_.jpg" ></a>
+              </div>
+              
+                <h3 class="ct-blog-header">Samsung G<br> Book2 </h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span><p>Price &#x20b9; 75000</p>
+            </div>
+          </div>
+          <div class="ct-blog col-sm-6 col-md-3">
+            <div class="inner">
+              <div class="fauxcrop">
+                <a href="#"><img alt="News Entry" src="https://m.media-amazon.com/images/I/61Qfiq0RG8L._UX679_.jpg" ></a>
+              </div>
+                <h3 class="ct-blog-header">J&J <br>yellow shirt</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span><p>Price &#x20b9; 1500</p>
+            </div>
+          </div>
+          <div class="ct-blog col-sm-6 col-md-3">
+            <div class="inner">
+              <div class="fauxcrop">
+                <a href="#"><img alt="News Entry" src="https://m.media-amazon.com/images/I/71wW9KXJ1FL._UY879_.jpg" ></a>
+              </div>
+                <h3 class="ct-blog-header">Levi's <br> Jeans</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span><p>Price &#x20b9; 2500</p>
+            </div>
+          </div>
+          <div class="ct-blog col-sm-6 col-md-3">
+            <div class="inner">
+              <div class="fauxcrop">
+                <a href="#"><img alt="News Entry" src="https://m.media-amazon.com/images/I/71kJP2xjTbL._UX695_.jpg" ></a>
+              </div>
+                <h3 class="ct-blog-header">PUMA <br>White shoes</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span><p>Price &#x20b9; 2500</p>
+            </div>
+          </div>
+          <div class="ct-blog col-sm-6 col-md-3">
+            <div class="inner">
+              <div class="fauxcrop">
+                <a href="#"><img alt="News Entry" src="https://m.media-amazon.com/images/I/71GNFJX7VQL._UY695_.jpg" ></a>
+              </div>
+                <h3 class="ct-blog-header">PUMA<br>Slides</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span><p>Price &#x20b9; 550</p>
+            </div>
+          </div>
+          <div class="ct-blog col-sm-6 col-md-3">
+            <div class="inner">
+              <div class="fauxcrop">
+                <a href="#"><img alt="News Entry" src="data:image/jpeg;base64,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" ></a>
+              </div>
+                <h3 class="ct-blog-header">Soch Kurta</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span><p>Price &#x20b9; 550</p>
+            </div>
+          </div>
+          <div class="ct-blog col-sm-6 col-md-3">
+            <div class="inner">
+              <div class="fauxcrop">
+                <a href="#"><img alt="News Entry" src="https://www.damselinadress.com/dw/image/v2/BDCH_PRD/on/demandware.static/-/Sites-master-Catalog-P8/default/dw84f031f5/images/240726000/240726000-01-valarie-colourblock-dress.jpg?sw=571&sh=800&strip=false" ></a>
+              </div>
+                <h3 class="ct-blog-header">ZARA Slim Fit</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span><p>Price &#x20b9; 5000</p>
+            </div>
+          </div> -->
+      </div>
+    </div>
+</section>

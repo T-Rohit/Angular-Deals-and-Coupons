@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="rightele">
+    </div>
+    <button type="submit" class="t" routerLink="/after-admin-login">Back</button>
+    <div class="row">
+        <div class="col-md-6">
+        <div class="card">
+            <div class="text-center">
+                <hr>
+            </div>
+            <form  class="text-left" #adminDealForm="ngForm" (ngSubmit)="getDeals(adminDealForm.value)" >
+                <div class="form-group">
+                  <label >Deal name</label>
+                  <input type="prodName" class="form-control" ngModel name="prodName" placeholder="Enter Prodcut Name" >
+                  <label >Price</label>
+                  <input type="Price" class="form-control" ngModel name="prodPrice" placeholder="Enter Price" >
+                  <label >image</label>
+                  <input type="url" class="form-control" ngModel name="image" placeholder="Enter url" >
+                </div>
+
+                <button type="submit" class="btn btn-primary" > Add </button>
+              
+              </form><br>
+        </div>
+        </div> 
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<section class="recentNews">
+    <img src="https://img.grouponcdn.com/deal/2tAnk37ijij5aDNVDD51MbcSVEG9/2t-1680x250" >
+      <div class="container">
+  
+        <h2 class="news-title">Deals</h2>
+        <button onclick="window.location.href='http://localhost:4200/addDeals';">Add Deals</button>
+        <button onclick="window.location.href='http://localhost:4200/deleteDeals';">Delete Deals</button>
+        <div class="row">
+         
+          <div class="ct-blog col-sm-6 col-md-3" *ngFor="let deals of Deals">
+            <div class="inner">
+              <div class="fauxcrop">
+                <a href="#"><img alt="{{deals.image}}" src="{{deals.image}}.jpg" ></a>
+              </div>
+                <h3 class="ct-blog-header">{{deals.prodName}}</h3>
+                <p>Price &#x20b9; {{deals.prodPrice}}</p>
+                  
+            </div>
+          </div>
+        </div>
+    </div>
+</section>       

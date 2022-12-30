@@ -1,0 +1,21 @@
+<section class="recentNews">
+    <div class="container">
+      <h2 class="news-title">Coupons</h2>
+      <button onclick="window.location.href='http://localhost:4200/addCoupons';">Add Coupons</button>
+      <button onclick="window.location.href='http://localhost:4200/deleteCoupons';">Delete Coupons</button>
+      <div class="row">
+        <div class="ct-blog col-sm-6 col-md-3" *ngFor="let coupons of Coupons">
+          <div class="inner">
+            <div class="fauxcrop">
+              <a href="#"><img alt="{{coupons.image}}" src="{{coupons.image}}.jpg" ></a>
+            </div>
+              <h3 class="ct-blog-header">{{coupons.prodName}}</h3>
+              <p>Price &#x20b9; {{coupons.prodPrice}}</p>  
+              <p>Coupon Code {{coupons.coupon}}</p> 
+              <p>{{coupons.cashBack}}</p>
+              <button>Redeem Code</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>

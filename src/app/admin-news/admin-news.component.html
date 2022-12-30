@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="rightele">
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+        <div class="card">
+            <div class="text-center">
+                <hr>
+            </div>
+            <form  class="text-left" #adminNewsForm="ngForm" (ngSubmit)="getNews(adminNewsForm.value)" >
+                <div class="form-group">
+                  <label >HeadLine</label>
+                  <input type="headLine" class="form-control" ngModel name="headLine" placeholder="Enter Headline" >
+                  <label >Body</label>
+                  <input type="body" class="form-control" ngModel name="body" placeholder="Enter body" >
+                  <label >img</label>
+                  <input type="img" class="form-control" ngModel name="img" placeholder="Enter img" >
+                </div>
+
+                <button type="submit" class="btn btn-primary" > Add </button>
+              
+              </form><br>
+        </div>
+        </div> 
+    </div>
+</div>

@@ -1,0 +1,15 @@
+.container-fluid{
+    background-color: rgb(179, 226, 255)  
+
+}
+img{
+    float: center;
+    width:  250px;
+    height: 150px;
+    border-radius: 5%;
+}
+.box{
+    height: 270px;
+    margin-block: 5%;
+}
+

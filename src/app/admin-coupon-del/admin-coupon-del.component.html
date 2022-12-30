@@ -1,0 +1,18 @@
+<section class="recentNews">
+      <div class="container">
+  
+        <button type="submit" class="t" routerLink="/after-admin-login">Back</button>
+        <h2 class="news-title">Coupons</h2>
+        <div class="row">
+            <table *ngFor="let coupons of Coupons">
+                <tr>
+                  <th class="name" style="width: 70%;"> {{coupons.prodName}}</th> 
+                  <th style="width: 20%;">{{coupons.prodPrice}}</th>
+                  <th style="width: 20%;">{{coupons.coupon}}</th>
+                  <th><button (click)="delCoupon(coupons.prodName)">Delete</button></th>
+                </tr>
+              </table>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,30 @@
+.navbar{
+    background-color: rgb(26, 53, 112);
+    color: rgb(31, 31, 31);
+    margin-bottom: auto;
+}
+.container{
+    background-color: rgb(26, 53, 112);
+    color: rgb(26, 53, 112);
+
+}
+img {
+    border-radius: 50%;
+  }
+.item{
+    float: right;
+}
+.text{
+    color: aliceblue;
+}
+.btn-outline-btn:hover {
+    border: 1px solid #d8dbe2;
+    color: #00206f;
+}
+.btn-outline-btn:hover {
+    background: #0a2466;
+    color: #ffffff;
+}
+.btn{
+    float: right;
+}

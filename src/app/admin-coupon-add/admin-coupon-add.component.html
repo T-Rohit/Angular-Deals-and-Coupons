@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="rightele">
+    </div>
+    <button type="submit" class="t" routerLink="/after-admin-login">Back</button>
+    <div class="row">
+        <div class="col-md-6">
+        <div class="card">
+            <div class="text-center">
+                <hr>
+            </div>
+            <form  class="text-left" #adminCouponForm="ngForm" (ngSubmit)="getCoupons(adminCouponForm.value)" >
+                <div class="form-group">
+                  <label >Product name</label>
+                  <input type="prodName" class="form-control" ngModel name="prodName" placeholder="Enter Prodcut Name" >
+                  <label >Price</label>
+                  <input type="Price" class="form-control" ngModel name="prodPrice" placeholder="Enter Price" >
+                  <label >Coupon</label>
+                  <input type="coupon" class="form-control" ngModel name="coupon" placeholder="Enter Coupon Code" >
+                  <label >Cashback</label>
+                  <input type="cashBack" class="form-control" ngModel name="cashBack" placeholder="Enter Cashback amount" >
+                  <label >image</label>
+                  <input type="url" class="form-control" ngModel name="image" placeholder="Enter url" >
+                </div>
+
+                <button type="submit" class="btn btn-primary" > Add </button>
+              
+              </form><br>
+        </div>
+        </div> 
+    </div>
+</div>
+

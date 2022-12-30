@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <div class="rightele"><img src="https://i.shgcdn.com/9a170f97-0185-4c4a-be99-b9de69d04c7c/-/format/auto/-/preview/3000x3000/-/quality/lighter/" alt="5 Terre" style="width:100%">
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+        <div class="card">
+            <div class="text-center">
+                <h1>SignUp </h1>
+                <h5>&</h5>
+                <h3>Get Exciting Coupons and Discounts</h3>
+                <hr>
+            </div>
+            <form  [formGroup]="signupForm"  class="text-left" #registrationForm="ngForm" (ngSubmit)="getRegistrationValue(registrationForm.value)" >
+                <div class="form-group">
+                  <label >Email address</label>
+                  <input type="email" class="form-control"  placeholder="Enter email" formControlName="email">
+                  <span style="color: red;" *ngIf="email && email.invalid && email.touched">Invalid Email</span><br><br>
+                  <label >Password</label>
+                  <input type="password" class="form-control"  placeholder="Password" formControlName="password">
+                  <span style="color: red;" *ngIf="password && password.invalid && password.touched">Invalid Field</span><br><br>
+                  <label >Gender</label>
+                  <input type="gender" class="form-control"  placeholder="Enter gender" formControlName="gender">
+                  <span style="color: red;" *ngIf="gender && gender.invalid && gender.touched">Invalid Field</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary" [disabled]="signupForm.invalid"> SignUp </button>
+              
+              </form><br>
+              <a routerLink="/registration">Login</a><br>
+              <small>If you are already registered</small><br>
+        </div>
+        </div> 
+    </div>
+</div>

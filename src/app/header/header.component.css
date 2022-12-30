@@ -1,0 +1,37 @@
+.navbar{
+    background-color: rgb(26, 53, 112);
+    color: rgb(31, 31, 31);
+    margin-bottom: auto;
+}
+p.solid {border-style: solid;}
+.container{
+    background-color: rgb(26, 53, 112);
+    color: rgb(26, 53, 112);
+
+}
+img {
+    border-radius: 50%;
+  }
+
+.text{
+    color: aliceblue;
+}
+.navbar-custom {
+    height: 500px;
+}
+
+.navbar-custom {
+    height: 100px;
+  }
+  .btn-outline-btn:hover {
+    border: 1px solid #d8dbe2;
+    color: #00206f;
+}
+.btn-outline-btn:hover {
+    background: #0a2466;
+    color: #ffffff;
+}
+.btn{
+    float: left;
+    border: #8e8c8c;
+}
